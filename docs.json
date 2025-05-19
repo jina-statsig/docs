@@ -11,31 +11,252 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Home",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Core Concepts",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "foundations/markdown",
+              "foundations/code",
+              "foundations/images"
+            ]
+          },
+          
+          {
+            "group": "Admin Settings",
+            "pages": [
+              "index"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Feature Flags",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "foundations/markdown",
+              "foundations/code",
+              "foundations/images"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Experiments",
+        "dropdowns": [
+          {
+            "dropdown": "Statsig Cloud",
+            "icon": "cloud",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "experiments/cloud/overview",
+                  {
+                    "group": "Types of experiments",
+                    "pages": [
+                      "experiments/cloud/sequential-testing",
+                      "experiments/cloud/bayesian",
+                      "experiments/cloud/multi-armed-bandits",
+                      "experiments/cloud/switchback-tests",
+                      "experiments/cloud/one-sided-tests",
+                      "experiments/cloud/ai-prompts",
+                      "experiments/cloud/a-a-tests"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Guided tutorials",
+                "pages": [
+                  "experiments/cloud/ab-testing-on-anonymous-users"
+                ]
+              },
+              {
+                "group": "Setup your experiment",
+                "pages": [
+                  "experiments/cloud/planning",
+                  "experiments/cloud/create",
+                  {
+                    "group": "Pre-launch checks",
+                    "pages": [
+                      "experiments/cloud/srm-checks",
+                      "experiments/cloud/pre-experiment-bias",
+                      "experiments/cloud/quality-score"
+                    ]
+                  },
+                  "experiments/cloud/launch"
+                ]
+              },
+              {
+                "group": "Layers, holdouts, & targeting",
+                "pages": [
+                  "experiments/cloud/getting-the-group",
+                  "experiments/cloud/overrides",
+                  "experiments/cloud/layers",
+                  "experiments/cloud/holdouts",
+                  "experiments/cloud/bot-traffic"
+                ]
+              },
+              {
+                "group": "Monitoring your experiment",
+                "pages": [
+                  "experiments/cloud/power-analysis",
+                  "experiments/cloud/stratified-sampling",
+                  "experiments/cloud/how-we-calculate"
+                ]
+              },
+              {
+                "group": "Reducing variance & false positives",
+                "pages": [
+                  "experiments/cloud/variance-reduction",
+                  "experiments/cloud/cuped",
+                  "experiments/cloud/winsorization"
+                ]
+              },
+              {
+                "group": "Advanced statistical methods",
+                "pages": [
+                  "experiments/cloud/variance-reduction",
+                  "experiments/cloud/cuped",
+                  "experiments/cloud/winsorization",
+                  "experiments/cloud/bonferroni-correction",
+                  "experiments/cloud/benjamini-hochberg"
+                ]
+              },
+              {
+                "group": "Reading results",
+                "pages": [
+                  "experiments/cloud/setup"
+                ]
+              },
+              {
+                "group": "Analyzing results",
+                "pages": [
+                  "experiments/cloud/setup"
+                ]
+              },
+              {
+                "group": "Ending your experiment",
+                "pages": [
+                  "experiments/cloud/ending-an-experiment",
+                  "experiments/cloud/making-a-decision",
+                  "experiments/cloud/stopping-assignments"
+                ]
+              }
+            ]
+          },
+          {
+            "dropdown": "Warehouse Native",
+            "icon": "database",
+            "groups": [
+              {
+                "group": "Warehouse Native Experiments",
+                "pages": [
+                  "experiments/whn/differences",
+                  "experiments/whn/power-analysis"
+                ]
+              },
+              {
+                "group": "Setup in Warehouse Native",
+                "pages": [
+                  "experiments/whn/create",
+                  "experiments/whn/experiment-options",
+                  "experiments/whn/types-of-experiments",
+                  "experiments/whn/understanding-experiments"
+                ]
+              },
+              {
+                "group": "Loading experiment results",
+                "pages": [
+                  "experiments/whn/turbo-mode"
+                ]
+              },
+              {
+                "group": "Other experiment topics",
+                "pages": [
+                  "experiments/whn/common-methods",
+                  "experiments/whn/experiment-results"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Analytics",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "foundations/markdown",
+              "foundations/code",
+              "foundations/images"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Warehouse Native",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "foundations/markdown",
+              "foundations/code",
+              "foundations/images"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "foundations/markdown",
+              "foundations/code",
+              "foundations/images"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "SDK & API Reference",
         "groups": [
           {
             "group": "API Documentation",
@@ -54,26 +275,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
